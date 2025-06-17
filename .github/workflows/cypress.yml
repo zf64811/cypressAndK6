@@ -27,4 +27,4 @@ jobs:
           personal_token: ${{ secrets.GH_TOKEN }}
           external_repository: zf64811/zf64811.github.io
           publish_branch: gh-pages
-          publish_dir: ../../cypress/reports
+          publish_dir: ${{ github.workspace }}/cypress/reports
