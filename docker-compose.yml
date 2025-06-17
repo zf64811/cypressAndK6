@@ -1,0 +1,10 @@
+# docker-compose.yml
+version: '3'
+services:
+  cypress:
+    build: .
+    volumes:
+      - ./:/e2e
+    environment:
+      - CI=true
+    command: npm run test
